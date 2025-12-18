@@ -15,8 +15,7 @@ spec:
       containers:
         - name: testmodel
           
-          image: mfd2026/testmodel:0.1
-          imagePullPolicy: IfNotPresent
+          image: mfd2026/testmodel:v1
           ports:
             - containerPort: 8000
           livenessProbe:
