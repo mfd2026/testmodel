@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: testmodel-deploy
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: testmodel
@@ -32,8 +32,8 @@ spec:
             periodSeconds: 5
           resources:
             requests:
-              cpu: 100m
-              memory: 128Mi
-            limits:
               cpu: 500m
               memory: 512Mi
+            limits:
+              cpu: 1000m
+              memory: 1024Mi
