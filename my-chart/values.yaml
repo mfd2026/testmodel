@@ -1,0 +1,19 @@
+image:
+  repository: mfd2026/testmodel
+  tag: v1
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+service:
+  type: NodePort
+  port: 8000
+  nodePort: 30090
+
+resources:
+  requests:
+    cpu: 1000m
+    memory: 1Gi
+  limits:
+    cpu: 3000m
+    memory: 3Gi
