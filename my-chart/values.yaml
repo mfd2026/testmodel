@@ -8,7 +8,7 @@ replicaCount: 1
 service:
   type: NodePort
   port: 8000
-  nodePort: 30090
+  nodePort: 30080
 
 resources:
   requests:
